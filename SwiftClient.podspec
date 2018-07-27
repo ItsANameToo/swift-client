@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
   s.version = '0.1.0'
   s.license = 'MIT'
   s.summary = 'A simple API client implementation in Swift for the ARK Blockchain'
-  s.homepage = 'https://github.com/ItsANameToo/swift-client'
+  s.homepage = 'https://github.com/ArkEcosystem/swift-client'
   s.authors = { 'Ark Ecosystem' => 'info@ark.io' }
-  s.source = { :git => 'https://github.com/ItsANameToo/swift-client.git', :tag => s.version }
+  s.source = { :git => 'https://github.com/ArkEcosystem/swift-client.git', :tag => s.version }
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
