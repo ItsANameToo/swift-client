@@ -357,6 +357,7 @@
 				D03F5E692104BC9300ED8884 /* Frameworks */,
 				D03F5E6A2104BC9300ED8884 /* Headers */,
 				D03F5E6B2104BC9300ED8884 /* Resources */,
+				D0BFFF952116F8120042795D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -394,6 +395,7 @@
 				D0DE446120F52ADF00079494 /* Headers */,
 				D0DE446220F52ADF00079494 /* Resources */,
 				D03F5E2E2100BB8B00ED8884 /* ShellScript */,
+				D0BFFF942116F7480042795D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -512,6 +514,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint --strict\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		D0BFFF942116F7480042795D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		D0BFFF952116F8120042795D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
